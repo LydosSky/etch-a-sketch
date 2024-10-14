@@ -6,9 +6,6 @@
 
 body {
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .container {
@@ -16,13 +13,18 @@ body {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  width: 100%;
   height: 100%;
 }
 
 .square {
-  height: 25%;
-  background: #1e3e62;
-  flex: 0 0 25%;
-  border: 1px solid #ff6500;
+  background: #493628;
+}
+
+.grid-size-btn {
+  padding: 8px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  opacity: 0.85;
 }
