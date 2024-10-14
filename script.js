@@ -2,10 +2,14 @@ const container = document.querySelector(".container");
 const btn = document.querySelector(".grid-size-btn");
 
 const btnEventHandler = function () {
-  const input = parseInt(prompt("Please enter a grid size "));
+  let input = parseInt(prompt("Please enter a grid size "));
 
   if (Number.isInteger(input)) {
     container.innerHTML = null;
+
+    if (input > 100) {
+      input = 100;
+    }
     gridCreater(input);
   } else {
     alert("C'mon Now ");
